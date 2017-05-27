@@ -2,5 +2,5 @@
     <string name="app_name">MagicEightBall</string>
     <string name="triangle">▼</string>
     <string name="circle">●</string>
-    <string name="_8">numberEight</string>
+    <string name="numberEight">8</string>
 </resources>

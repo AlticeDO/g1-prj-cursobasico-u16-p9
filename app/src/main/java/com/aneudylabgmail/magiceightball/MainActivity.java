@@ -26,6 +26,14 @@ public class MainActivity extends ShakeableActivity {
 
     private MagicEightBall magicEightBall;
 
+    public MainActivity(MagicEightBall magicEightBall) {
+        this.magicEightBall = magicEightBall;
+    }
+
+    public MainActivity(){
+        // Poor man's DI.
+        magicEightBall = new MagicEightBall();
+    }
     private void initComponents(){
         answerFrame = (FrameLayout) findViewById(R.id.answer_frame);
         eightBallFrame = (FrameLayout) findViewById(R.id.eight_ball_frame);
@@ -33,8 +41,6 @@ public class MainActivity extends ShakeableActivity {
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
         answerFrame.setVisibility(View.INVISIBLE);
         progressBar.setMax(PROGRESS_BAR_REFRESH_RATE*SECONDS_TO_SHOW_ANSWER);
-
-        magicEightBall = new MagicEightBall();
     }
 
     private void showAnswer(String answer){
