@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:gravity="center">
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="false"
+        android:max="100"
+        android:padding="4dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/answer_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/triangle"
+            android:textSize="330sp"
+            android:textColor="#0000ff"
+            />
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="150dp"
+            android:layout_marginTop="-40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/eight_ball_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/circle"
+            android:textColor="#ffffff"
+            android:textSize="300sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/_8"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="270sp"
+            android:textColor="#000"/>
+    </FrameLayout>
+
+</FrameLayout>
